@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreditbee</title>
+</head>
+
+<style>
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav div img {
+        width: 200px;
+        border-style: none;
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .right-nav div {
+        margin-right: 15px;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+
+
+    .right-nav div img {
+        width: 30px;
+    }
+
+    .main {
+        text-align: left;
+        padding-top: 25px;
+
+    }
+
+    .main h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline #ffea02;
+        text-decoration-thickness: 4px;
+        text-align: center;
+
+    }
+
+
+    .detail {
+        display: flex;
+        gap: 15px;
+    }
+
+    .detail div {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px 10px 4px 10px;
+
+    }
+
+    .detail div img {
+        width: 60px;
+    }
+
+    .detail div h4 {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .detail div p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        color: rgb(119, 117, 117);
+    }
+
+    .blog {
+        margin-top: 100px;
+    }
+
+    .blog-card {
+        display: flex;
+        gap: 20px;
+    }
+
+    .blog-card div {
+        width: auto;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    .blog-card div img {
+        width: 100%;
+        text-align: center;
+        height: 220px;
+    }
+
+    .blog-card div p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: gray;
+        padding-left: 10px;
+    }
+
+    .blog-card div h2 {
+        padding-left: 10px;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        margin-top: 70px;
+        background-color: #efe469;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .form {
+        width: 350px;
+        height: 500px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        text-align: center;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .create-acctn {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        
+    }
+
+    .form-detail{
+        text-align: left;
+        padding-left: 25px;
+        
+    }
+
+    input{
+        border-style: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        padding: 9px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 80%;
+    }
+    .form-btn{
+        margin-top: 10px;
+        width: 70%;
+        margin-left: 8%;
+        padding: 7px;
+        border-style: none;
+        background-color: rgb(40, 140, 247);
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .form-btn:hover{
+        background-color: rgb(102, 171, 244);
+    }
+    .copyright p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .privacy{
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+    .sign-up{
+        border-radius: 5px;
+        border-color: red;
+        color: red;
+        background-color: white;
+        padding: 8px;
+        font-size: 12px;
+       
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://ik.imagekit.io/krazybee/kreditbee_in/logo_horizontal_fkmrDsJdQq.svg"
+                    alt="kreditbe -img">
+            </div>
+            <div class="right-nav">
+                <div class="dropdown">
+                    <p>Loans</p>
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-dropdown-icon-download-in-svg-png-gif-file-formats--keyboard-arrow-menu-key-direction-google-material-vol-3-pack-user-interface-icons-30471.png?f=webp&w=512"
+                        alt="">
+                </div>
+                <div class="dropdown">
+                    <p>Calculators</p>
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-dropdown-icon-download-in-svg-png-gif-file-formats--keyboard-arrow-menu-key-direction-google-material-vol-3-pack-user-interface-icons-30471.png?f=webp&w=512"
+                        alt="">
+                </div>
+                <div>
+                    <p>Credit report</p>
+                </div>
+                <div>
+                    <p>Refer & Earn</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="heart">
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="cart">
+                </div>
+                <div>
+                    <button class="sign-up">SIGN UP</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <h2>Why choose KreditBee?</h2>
+            <div class="detail">
+                <div>
+                    <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg" alt="img">
+                    <h4>Lower Interest Rates</h4>
+                    <p>Get loans for multiple purposes at lower interest rates to suit your needs</p>
+                </div>
+                <div>
+                    <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg" alt="img">
+                    <h4>Fast Processing and Disbursal</h4>
+                    <p>Apply online, check your eligibility and get money directly in your bank in 10 minutes</p>
+                </div>
+                <div>
+                    <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg" alt="img">
+                    <h4>Easy Repayment Options</h4>
+                    <p>Repay the loan amount in easy EMI with flexible tenure options</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <h3>Fresh from the blog &rarr;</h3>
+            <div class="blog-card">
+                <div>
+                    <img src="https://www.bing.com/th?id=OIP.DtLg1qHE7dq-YiqbhRvXUwHaHa&w=183&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.2&pid=3.1&rm=2"
+                        alt="pic">
+                    <p>Shopping Guides</p>
+                    <h2>9 Comfy Throws for cosy Autumn Vibes</h2>
+                    <p>Embraces the struggling seasons with stylish throws that will warm your hearts.</p>
+                </div>
+                <div>
+                    <img src="https://www.bing.com/th?id=OIP.J-BZjBcR1W_J5uJ94RCywQHaIR&w=134&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.2&pid=3.1&rm=2"
+                        alt="pic">
+                    <p>Shopping Guides</p>
+                    <h2>14 Beutifull Bags That Express Your Unique Style</p>
+                </div>
+                <div>
+                    <img src="https://www.bing.com/th?id=OIP.vDTw5Aa4wp3mK_DmSltNlwHaFH&w=188&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.2&pid=3.1&rm=2"
+                        alt="pic">
+                    <p>Shopping Guides</p>
+                    <h2>The Best Gift Ideas for Kids of All Ages</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="form">
+                <div class="form-heading">
+                    <p class="create-acctn">Create Account</p>
+                    <h5>Already have an account? <span style="color: blue;">Sign in</span></h5>
+                </div>
+                <div class="form-detail">
+
+                    <label for="">Full Name</label><br>
+                    <input type="text" placeholder="Enter full name"><br>
+
+                    <label for="">Email address</label><br>
+                    <input type="text" placeholder="Enter email address"><br>
+
+                    <label for="">Phone Number</label><br>
+                    <input type="text" placeholder="Enter your whatsapp number"><br>
+
+                    <label for="">Referral Code (Optional)</label><br>
+                    <input type="text" placeholder="Enter referral code"><br>
+
+                    <button class="form-btn">Submit</button>
+
+                    <p class="privacy">By signing up, I accept the masai <a href="">Terms of Service</a>and acknowledge the <a
+                            href="">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p >COPYRIGHT &#169;ETSY PRIVATE LIMITED.ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+        
+    </div>
+    
+
+</body>
+
+</html>

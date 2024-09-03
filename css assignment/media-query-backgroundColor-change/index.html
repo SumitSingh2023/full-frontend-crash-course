@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        @media (max-width:200px){
+            .container{
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:201px) and (max-width:600px){
+            .container{
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:800px){
+            .container{
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 0, 255);
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hellow,Welcome to my website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae ipsam, dolorem officiis sit nam maxime repellendus amet iste minima aliquam corrupti praesentium eum itaque quia sapiente consequatur corporis atque.</p>
+        <h3>Best website</h3>
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ipsam culpa ab ullam voluptate placeat nihil tempora doloribus id praesentium!</h5>
+    </div>
+    
+</body>
+</html>

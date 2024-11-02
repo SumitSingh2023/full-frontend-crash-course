@@ -1,0 +1,39 @@
+.timer-container{
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+    margin-top: 170px;
+    padding: 25px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#timerDisplay {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.buttonBox{
+    text-align: center;
+}
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
